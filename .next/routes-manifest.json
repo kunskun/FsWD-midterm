@@ -1,1 +1,63 @@
-{"version":3,"pages404":true,"basePath":"","redirects":[{"source":"/:path+/","destination":"/:path+","internal":true,"statusCode":308,"regex":"^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"}],"headers":[],"dynamicRoutes":[{"page":"/post/[post_id]","regex":"^/post/([^/]+?)(?:/)?$","routeKeys":{"post_id":"post_id"},"namedRegex":"^/post/(?<post_id>[^/]+?)(?:/)?$"}],"staticRoutes":[{"page":"/","regex":"^/(?:/)?$","routeKeys":{},"namedRegex":"^/(?:/)?$"},{"page":"/author","regex":"^/author(?:/)?$","routeKeys":{},"namedRegex":"^/author(?:/)?$"},{"page":"/category","regex":"^/category(?:/)?$","routeKeys":{},"namedRegex":"^/category(?:/)?$"},{"page":"/home","regex":"^/home(?:/)?$","routeKeys":{},"namedRegex":"^/home(?:/)?$"},{"page":"/post","regex":"^/post(?:/)?$","routeKeys":{},"namedRegex":"^/post(?:/)?$"},{"page":"/post/comment","regex":"^/post/comment(?:/)?$","routeKeys":{},"namedRegex":"^/post/comment(?:/)?$"}],"dataRoutes":[],"rewrites":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/post/[post_id]",
+      "regex": "^/post/([^/]+?)(?:/)?$",
+      "routeKeys": { "post_id": "post_id" },
+      "namedRegex": "^/post/(?<post_id>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/author",
+      "regex": "^/author(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/author(?:/)?$"
+    },
+    {
+      "page": "/category",
+      "regex": "^/category(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/category(?:/)?$"
+    },
+    {
+      "page": "/home",
+      "regex": "^/home(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home(?:/)?$"
+    },
+    {
+      "page": "/post",
+      "regex": "^/post(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/post(?:/)?$"
+    },
+    {
+      "page": "/post/comment",
+      "regex": "^/post/comment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/post/comment(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rewrites": []
+}
