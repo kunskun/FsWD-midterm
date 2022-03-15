@@ -28,11 +28,9 @@ export default function Comment() {
               </div>
               <div className="col-11">
                 <h5 className="card-title"  dangerouslySetInnerHTML={{ __html: comment.author_name }} />
-                <p dangerouslySetInnerHTML={{ __html: moment(comment.date).format('MMMM DD YYYY, hh:mm:ss a') }} />
-              </div>
-            </div>
-            <div className="row pt-4">
+                <h6 dangerouslySetInnerHTML={{ __html: moment(comment.date).format('MMMM DD YYYY, hh:mm:ss a') }} />
                 <p dangerouslySetInnerHTML={{ __html: comment.content.rendered }} />
+              </div>
             </div>
           </div>
           

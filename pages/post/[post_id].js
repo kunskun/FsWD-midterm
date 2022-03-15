@@ -49,6 +49,29 @@ export default function Post_Detail() {
     return tmp;
   };
 
+  const callAPI = async (a, b, c) => {
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: "Basic ZnN3ZDpmc3dkLWNtcw==",
+    };
+
+    await axios
+      .post(
+        "https://fswd-wp.devnss.com/wp-json/wp/v2/comments?posts",
+        {
+          content: b,
+          author_name: a,
+          post: c,
+        },
+        {
+          headers: headers,
+        }
+      )
+      .then((res) => {
+        console.log(res);
+      });
+  };
+
   if (loading) {
     return (
       <div className="styles.container">
@@ -131,6 +154,45 @@ export default function Post_Detail() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="card p-3 mb-3">
+          <div>
+            <h3>Write Comment</h3>
+          </div>
+          <form>
+            <div class="form-group mb-2">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+            <div class="form-group mb-2">
+              <label for="comment">Comment</label>
+              <input
+                type="text"
+                class="form-control"
+                id="comment"
+                placeholder="Enter Message"
+                required
+              />
+            </div>
+          </form>
+          <button
+            class="btn btn-dark"
+            onClick={() =>
+              callAPI(
+                document.getElementById("name").value,
+                document.getElementById("comment").value,
+                post_id
+              )
+            }
+          >
+            Submit
+          </button>
         </div>
         <div className="card mb-1 p-3">
           <Comment />

@@ -1,14 +1,7 @@
 {
   "/_app": "pages/_app.js",
-  "/api/hello": "pages/api/hello.js",
-  "/author": "pages/author.html",
-  "/category": "pages/category.html",
-  "/home": "pages/home.html",
-  "/": "pages/index.html",
-  "/post/[post_id]": "pages/post/[post_id].html",
-  "/post/comment": "pages/post/comment.html",
-  "/post": "pages/post.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/post": "pages/post.js",
+  "/post/[post_id]": "pages/post/[post_id].js"
 }
