@@ -15,7 +15,6 @@ export default function Home() {
         {console.log(posts)}
       {alert('asdasdasd')}
       {alert(posts)}
-      {alert(axios)}
       {axios.get(`https://fswd-wp.devnss.com/wp-json/wp/v2/pages?`).then((res) => {
         alert(res.data);
       })}
