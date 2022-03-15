@@ -1,8 +1,9 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 import Script from "next/script";
 import 'bootstrap/dist/css/bootstrap.css';
-import Head from 'next/head'
+import Head from 'next/head';
 import Link from "next/link";
+import axios from "axios";
 
 function MyApp({ Component, pageProps }) {
   return (
