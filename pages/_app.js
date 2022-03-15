@@ -1,21 +1,22 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import Head from 'next/head'
+import Link from "next/link";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top position-sticky" >
-        <a className="navbar-brand" href="./">
+        {/* <a className="navbar-brand" href="/">
           <img src="/favicon.ico" width="30" height="30" className="d-inline-block align-top" alt="" />
           <span> CMS Midterm</span>
-        </a>
+        </a> */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-item nav-link" href="/">Home</a>
+            {/* <a className="nav-item nav-link" href="/">Home</a>
             <a className="nav-item nav-link" href="/post">Post</a>
             <a className="nav-item nav-link" href="/category">Category</a>
-            <a className="nav-item nav-link" href="/author">Author</a>
+            <a className="nav-item nav-link" href="/author">Author</a> */}
           </div>
         </div>
         {/* <form className="form-inline">
