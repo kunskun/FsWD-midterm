@@ -65,7 +65,7 @@ export default function Home() {
           return (
             <>
               <div className="col-3">
-                <a
+                <Link
                   href={item.link}
                   className="mx-1"
                   style={{ color: "black", textDecoration: "none" }}
@@ -79,7 +79,7 @@ export default function Home() {
                       <p>{item.description ? item.description : "-"}</p>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </>
           );
