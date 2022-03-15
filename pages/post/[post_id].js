@@ -3,6 +3,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import Comment from "./comment";
 import moment from "moment";
+import Link from "next/link";
 
 export default function Post_Detail() {
   const [posts, setPosts] = useState({});

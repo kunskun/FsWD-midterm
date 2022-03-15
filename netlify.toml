@@ -1,0 +1,5 @@
+command = "CI= yarn build"
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
