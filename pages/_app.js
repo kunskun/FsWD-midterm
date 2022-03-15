@@ -8,16 +8,26 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top position-sticky" >
-        <a className="navbar-brand" href="/">
-          <img src="/favicon.ico" width="30" height="30" className="d-inline-block align-top" alt="" />
-          <span> CMS Midterm</span>
-        </a>
+        <Link href="/">
+          <a className="navbar-brand">
+            <img src="/favicon.ico" width="30" height="30" className="d-inline-block align-top" alt="" />
+            <span> CMS Midterm</span>
+          </a>
+        </Link>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-item nav-link" href="/">Home</a>
-            <a className="nav-item nav-link" href="/post">Post</a>
-            <a className="nav-item nav-link" href="/category">Category</a>
-            <a className="nav-item nav-link" href="/author">Author</a>
+            <Link href="/">
+              <a className="nav-item nav-link">Home</a>
+            </Link>
+            <Link href="/post">
+              <a className="nav-item nav-link">Post</a>
+            </Link>
+            <Link href="/category">
+              <a className="nav-item nav-link">Category</a>
+            </Link>
+            <Link href="/author">
+              <a className="nav-item nav-link">Author</a>
+            </Link>
           </div>
         </div>
         {/* <form className="form-inline">
