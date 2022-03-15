@@ -12,6 +12,13 @@ export default function Home() {
 
   return (
     <div className="styles.container progress-bar-striped bg-warning p-3">
+        {console.log(posts)}
+      {alert('asdasdasd')}
+      {alert(posts)}
+      {alert(axios)}
+      {axios.get(`https://fswd-wp.devnss.com/wp-json/wp/v2/pages?`).then((res) => {
+        alert(res.data);
+      })}
       <div className="row my-4">
         <div className="col-12 d-flex justify-content-center">
           <h1>Full-stack Web Developer</h1>
