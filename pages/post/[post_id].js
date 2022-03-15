@@ -65,12 +65,12 @@ export default function Post_Detail() {
             <h5>
               Published by
               {
-                <a
+                <Link
                   href={fineAuthor(posts.author).link}
                   style={{ color: "black" }}
                 >
                   <span> {fineAuthor(posts.author).name} </span>
-                </a>
+                </Link>
               }
               on
               <span> {moment(posts.date).format("MMMM DD YYYY")}</span>
@@ -91,13 +91,14 @@ export default function Post_Detail() {
                       }
                     });
                     return (
-                      <a
+                      <Link
+                        key={id}
                         href={tmp.link}
                         className="mx-1"
                         style={{ color: "black" }}
                       >
                         {tmp.name}
-                      </a>
+                      </Link>
                     );
                   })}
                 </span>
@@ -111,7 +112,8 @@ export default function Post_Detail() {
                     }
                   });
                   return (
-                    <a
+                    <Link
+                      key={id}
                       href={tmp.link}
                       className="mx-1"
                       style={{ color: "black" }}
@@ -122,7 +124,7 @@ export default function Post_Detail() {
                       >
                         {tmp.name}
                       </button>
-                    </a>
+                    </Link>
                   );
                 })}
               </div>
