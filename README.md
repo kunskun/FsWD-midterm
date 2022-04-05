@@ -12,11 +12,11 @@ yarn dev
 
 Then open [localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Deploy on Vercel
+
+Open [http://fswd-midterm.vercel.app](https://fswd-midterm.vercel.app/?fbclid=IwAR1tUsYZ03nAU_Qk_RwRX2htXOvHLUIz42Jm7cGA7eT_HwcPYvytHMK10RQ) to see my result
+
 ## Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Deploy on Vercel
-
-Open [http://fswd-midterm.vercel.app](https://fswd-midterm.vercel.app/?fbclid=IwAR1tUsYZ03nAU_Qk_RwRX2htXOvHLUIz42Jm7cGA7eT_HwcPYvytHMK10RQ) to see my result
